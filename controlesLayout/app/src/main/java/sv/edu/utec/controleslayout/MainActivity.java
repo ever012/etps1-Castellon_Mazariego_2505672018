@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 Spinner spnPais;
@@ -26,6 +27,11 @@ RadioButton rbFem,rbMas,rbOtr;
         edtInfo = findViewById(R.id.edtMultiLine);
         spnPais = findViewById(R.id.spnPais);
 
+        rbFem = findViewById(R.id.rbnFemenino); //R = recursos
+        rbMas = findViewById(R.id.rbnMasculino);
+        rbOtr = findViewById(R.id.rbnOtros);
+
+
         // FORMA 1
         /*String[]opciones={"Seleccione un Pais","Guatemala","El Salvador","Honduras","Nicaragua","Costa Rica","Panamá"};
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,opciones);
@@ -39,7 +45,7 @@ RadioButton rbFem,rbMas,rbOtr;
             {
                 View vista=super.getView(position,contenido,parent); //voy a heredar de la vista es decir una llamada recursiva
                 if(position == getCount()){
-                    ((TextView)vista.findViewById(android.R.id.text1)).setText("");
+                    ((TextView)vista.findViewById(android.R.id.text1)).setText("");  //ese text1 es un texto temporal
                     ((TextView)vista.findViewById(android.R.id.text1)).setHint(getItem(getCount()));
                 }
                 return vista;
@@ -69,24 +75,79 @@ RadioButton rbFem,rbMas,rbOtr;
 
     public void almacenar(View v)
     {
+        edtInfo.setText(""); //limpio el edit text para una nueva ejecucion
         String datos = "";
         String seleccion = spnPais.getSelectedItem().toString();
+        //get traer
+        //set enviar
+        String nombre = edtNombres.getText().toString();
+        String apellidos = edtApellidos.getText().toString();
+        String genero = "";
+        String info = "";
+
+        if(rbMas.isChecked()==false && rbFem.isChecked()==false && rbOtr.isChecked()==false){
+            genero = "Seleccione el registro";
+            Toast mensaje = Toast.makeText(this, "🚨 Seleccione un genero",Toast.LENGTH_SHORT);//la informacion a mostrar será bassada en mi conexto actual por eso el "this"
+            mensaje.show();
+
+        }
+
+        if(rbMas.isChecked()==true)
+        {
+            genero = "Masculino";
+        } else if(rbFem.isChecked()==true) {
+            genero = "Femenino";
+        } else if(rbOtr.isChecked()==true) {
+            genero = "Otros";
+        }
+
+
         if(seleccion.equals("Seleccione un Pais"))
         {
-            datos = "No selecciono ningun pais";
+            edtInfo.append("No selecciono ningun pais");
         }
         else{
             if(seleccion.equals("Guatemala"))
             {
                 datos = "Guatemala";
-                edtInfo.append(datos);
+
             } else if (seleccion.equals("Guatemala"))
             {
                 datos = "Guatemala";
-                edtInfo.append(datos);
+
             }
-            edtInfo.append(datos);
-            //08/02/2023
+            else if (seleccion.equals("El Salvador"))
+            {
+                datos = "El Salvador";
+
+            }
+            else if (seleccion.equals("Honduras"))
+            {
+                datos = "Honduras";
+
+            }
+            else if (seleccion.equals("Nicaragua"))
+            {
+                datos = "Nicaragua";
+
+            }
+            else if (seleccion.equals("Costa Rica"))
+            {
+                datos = "Costa Rica";
+
+            }
+            else if (seleccion.equals("Panamá"))
+            {
+                datos = "Panamá";
+
+            }
+            info = "Los datos ingresados son los siguientes: \n" +
+                    "Nombre : " + nombre + "\n" +
+                    "Apellido : " + apellidos+ "\n" +
+                    "Genero : " + genero+ "\n" +
+                    "Pais : " + datos;
+
+            edtInfo.append(info);
         }
     }
 }
