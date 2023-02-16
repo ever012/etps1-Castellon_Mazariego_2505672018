@@ -8,6 +8,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText edNombre;
@@ -24,6 +25,8 @@ TextView twBienvenida;
     }
     public void mensajeBienvenida(View v){
         System.out.println("Bienvenido " + edNombre.getText());
+        Toast mensaje= Toast.makeText(this,"Bienvenido " + edNombre.getText(),Toast.LENGTH_LONG);
+        mensaje.show();
 
         //CAMBIAR A OTRO LAYOUT
             twBienvenida.setText("Bienvenido " + edNombre.getText());
