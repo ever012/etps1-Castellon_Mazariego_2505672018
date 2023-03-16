@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'sv.edu.utec.foodapp'
+    namespace 'sv.edu.utec.appsupermercadosprecios'
     compileSdk 33
 
     defaultConfig {
-        applicationId "sv.edu.utec.foodapp"
+        applicationId "sv.edu.utec.appsupermercadosprecios"
         minSdk 22
         targetSdk 33
         versionCode 1
@@ -37,5 +37,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
+    implementation 'com.google.android.material:material:1.9.0-alpha02'
+
+
 }
