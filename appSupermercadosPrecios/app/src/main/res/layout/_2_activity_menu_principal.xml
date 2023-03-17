@@ -31,7 +31,7 @@
 
     <Button
         android:id="@+id/btnSuper"
-        android:layout_width="170dp"
+        android:layout_width="188dp"
         android:layout_height="187dp"
         android:layout_marginStart="12dp"
         android:backgroundTint="#F44336"
@@ -45,8 +45,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="170dp"
-        android:layout_height="187dp"
+        android:layout_width="183dp"
+        android:layout_height="186dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#2196F3"

@@ -2,6 +2,7 @@ package sv.edu.utec.appsupermercadosprecios;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,46 +22,32 @@ public class _4_listaPrecios extends AppCompatActivity {
         setContentView(R.layout.activity_4_lista_precios);
 
         recyclerViewProductos = findViewById(R.id.rvProducto);
-        recyclerViewProductos.setLayoutManager(new LinearLayoutManager(this));
+        //recyclerViewProductos.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewProductos.setLayoutManager(new GridLayoutManager(this,2)); //muestra el recycleview en grid de 2 columnas, el 2 es la cantidad de columnas
         adaptador = new adaptador_producto(this,getListado());
-        recyclerViewProductos.setAdapter(adaptador);
-
-        /*mrecyclerView.setOnClickListener(new View.OnClickListener() {
-                                             @Override
-                                             public void onClick(View v) {
-                                                 Toast.makeText(getApplicationContext(), "prueba",Toast.LENGTH_LONG).show();
-                                             }
-                                         });
-*/
-        /*recyclerViewProductos.setOnHoverListener(new View.OnHoverListener() {
+        adaptador.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onHover(View v, MotionEvent event) {
-                Toast.makeText(getApplicationContext(),"Selecionar",Toast.LENGTH_SHORT).show();
-                return false;
-            }
-        });*/
-
-        recyclerViewProductos.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
-            @Override
-            public boolean onInterceptTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
-                // Obtiene la posición del elemento seleccionado
-                int position = rv.getChildAdapterPosition(rv.findChildViewUnder(e.getX(), e.getY()));
-
-                // Muestra un mensaje de toast con el elemento seleccionado
-                Toast.makeText(rv.getContext(), "Seleccionó " + rv.getAdapter().getItemId(position), Toast.LENGTH_LONG).show();
-
-                return false;
-            }
-            @Override
-            public void onTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
-                // No se utiliza
-            }
-
-            @Override
-            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-                // No se utiliza
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "seleccionaste: " +
+                        getListado().get(recyclerViewProductos.getChildAdapterPosition(view)).getNombreProducto(),
+                        Toast.LENGTH_LONG).show();
             }
         });
+
+        recyclerViewProductos.setAdapter(adaptador);
+
+
+        recyclerViewProductos.setOnHoverListener(new View.OnHoverListener() {
+            @Override
+            public boolean onHover(View v, MotionEvent event) {
+
+                Toast.makeText(getApplicationContext(),"Selecionar",Toast.LENGTH_SHORT).show();
+
+                return false;
+            }
+        });
+
+
 
     }
 

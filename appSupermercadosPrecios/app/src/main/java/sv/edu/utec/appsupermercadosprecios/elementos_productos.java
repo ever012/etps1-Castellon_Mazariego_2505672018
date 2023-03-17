@@ -15,6 +15,6 @@ public class elementos_productos extends RecyclerView.ViewHolder{//ViewHolder pe
 
             imgProducto = itemView.findViewById(R.id.imvPelicula);
             tvTituloProducto = itemView.findViewById(R.id.tvTitulo);
-            tvPrecioProducto = itemView.findViewById(R.id.tvPrecio);
+            tvPrecioProducto = itemView.findViewById(R.id.tvPrecioo);
             }
 }
