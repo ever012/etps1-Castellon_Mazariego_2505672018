@@ -24,4 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+    public void irARegistro(View v) {
+        Intent i = new Intent(getApplicationContext(),_6_crearUsuario.class);
+        startActivity(i);
+
+    }
+
 }

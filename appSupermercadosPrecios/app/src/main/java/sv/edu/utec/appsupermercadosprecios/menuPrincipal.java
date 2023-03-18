@@ -19,4 +19,10 @@ public class menuPrincipal extends AppCompatActivity {
         startActivity(i);
 
     }
+
+    public void irARegistro(View v) {
+        Intent i = new Intent(getApplicationContext(),_6_crearUsuario.class);
+        startActivity(i);
+
+    }
 }

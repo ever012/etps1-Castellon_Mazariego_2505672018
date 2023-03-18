@@ -39,6 +39,8 @@ implements View.OnClickListener{
         elementos_productos.tvTituloProducto.setText(modelos.get(position).getNombreProducto());
         elementos_productos.imgProducto.setImageResource(modelos.get(position).getImgProducto());
         elementos_productos.tvPrecioProducto.setText(modelos.get(position).getPrecioProducto());
+        elementos_productos.tvDescripcion1.setText(modelos.get(position).getDescripcionProduct());
+        elementos_productos.tvMedida.setText(modelos.get(position).getMedida());
     }
 
 
