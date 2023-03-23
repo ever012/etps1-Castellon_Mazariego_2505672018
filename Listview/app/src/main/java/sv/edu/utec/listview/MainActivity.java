@@ -40,7 +40,7 @@ List<String> peliculas;
         descrip.add("es una pelicula de Infantil");
         descrip.add("es una pelicula de Accion");
 
-        int [] pictures = {
+        int [] imagenes = {
                 R.drawable.imagen1,
                 R.drawable.imagen2,
                 R.drawable.imagen3,
@@ -52,7 +52,7 @@ List<String> peliculas;
 
         //ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
 
-        Adaptador adaptador = new Adaptador(this, R.layout.elemento,peliculas,descrip,pictures);
+        Adaptador adaptador = new Adaptador(this, R.layout.elemento,peliculas,descrip,imagenes);
         lista.setAdapter(adaptador);
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

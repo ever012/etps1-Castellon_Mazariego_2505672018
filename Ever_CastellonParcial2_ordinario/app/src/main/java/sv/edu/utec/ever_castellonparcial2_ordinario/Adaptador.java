@@ -1,4 +1,4 @@
-package sv.edu.utec.listview;
+package sv.edu.utec.ever_castellonparcial2_ordinario;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,22 +13,23 @@ import java.util.List;
 public class Adaptador extends BaseAdapter {
     Context contexto;
     int layout;
-    List<String> pelicula;
-    List<String> descrip;
+    List<String> Empleado;
+    List<String> Cargo;
+    List<String> Compania;
     int[]pictures;
-//en el contexto agrego todos los elementos que quiero que vaya a recibir
 
-    public Adaptador(Context contexto, int layout, List<String> pelicula, List<String> descrip, int[] imagenes) {
+    public Adaptador(Context contexto, int layout, List<String> empleado, List<String> cargo, List<String> compania, int[] pictures) {
         this.contexto = contexto;
         this.layout = layout;
-        this.pelicula = pelicula;
-        this.descrip = descrip;
-        this.pictures = imagenes;
+        Empleado = empleado;
+        Cargo = cargo;
+        Compania = compania;
+        this.pictures = pictures;
     }
 
     @Override
     public int getCount() {
-        return pelicula.size(); //da el tamaño de cada elemento que va a generar
+        return Empleado.size(); //da el tamaño de cada elemento que va a generar
     }
 
     @Override
@@ -47,13 +48,16 @@ public class Adaptador extends BaseAdapter {
         LayoutInflater layoutInflater = LayoutInflater.from(contexto);
         v = layoutInflater.inflate(R.layout.elemento, null);//lo voy a generar en "elemento"
 
-        TextView txtPeli = v.findViewById(R.id.tvNombre);
-        txtPeli.setText(pelicula.get(position));
+        TextView txtEmpleado = v.findViewById(R.id.tvNombre);
+        txtEmpleado.setText(Empleado.get(position));
 
-        TextView txtDescrip = v.findViewById(R.id.textView2);
-        txtDescrip.setText(descrip.get(position));
+        TextView txtCargo = v.findViewById(R.id.tvCargo);
+        txtCargo.setText(Cargo.get(position));
 
-        ImageView img = v.findViewById(R.id.imageView1);
+        TextView txtCompania = v.findViewById(R.id.tvCompania);
+        txtCompania.setText(Compania.get(position));
+
+        ImageView img = v.findViewById(R.id.imgvFotografia);
         img.setImageResource(pictures[position]);
 
 
