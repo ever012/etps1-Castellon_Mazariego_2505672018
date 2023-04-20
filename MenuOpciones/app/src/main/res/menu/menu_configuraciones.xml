@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/opcion1" android:icon="@drawable/baseline_icon" android:title="Opcion 1"
+    app:showAsAction="ifRoom"
+    ></item>
+
+    <item android:id="@+id/opcion2"
+
+        android:title="Opcion 2"
+        app:showAsAction="never"
+        ></item>
+
+    <item android:id="@+id/opcion3"
+
+        android:title="Opcion 3"
+        app:showAsAction="never"
+        ></item>
+
+    <item android:id="@+id/opcion4"
+
+        android:title="Opcion 4"
+        app:showAsAction="never"
+        ><menu>
+        <item android:id="@+id/subItem41"
+
+            android:title="Sub Item Opcion1 - 4"
+            app:showAsAction="never"
+            ></item>
+
+        <item android:id="@+id/subItem42"
+
+            android:title="Sub Item Opcion2 - 4"
+            app:showAsAction="never"
+            ></item>
+
+        <item android:id="@+id/subItem43"
+
+            android:title="Sub Item Opcion3 - 4"
+            app:showAsAction="never"
+            ></item>
+    </menu></item>
+
+</menu>
