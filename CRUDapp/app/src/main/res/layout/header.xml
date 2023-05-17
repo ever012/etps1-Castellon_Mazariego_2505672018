@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="#03A9F4"
+    android:gravity="bottom"
+    android:padding="20dp"
+
+    >
+    <!--"layout_gravity="bottom"" es para que quede pegajoso en el scroll-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/principal_icon"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UTEC-SOFT"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UTEC-SOFT-2023"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:textStyle="normal"
+        android:paddingLeft="20dp"
+        />
+
+</LinearLayout>
