@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_ClienteVehiculo">
+
+    <EditText
+        android:id="@+id/edtIdClient3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ID_Cliente"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtIdCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Id Vehiculo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Matricula"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtKilometros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Kilometros"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnInsertar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:text="insertar" />
+
+        <Button
+            android:id="@+id/btnActualizar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="actualizar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEliminar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:text="Eliminar" />
+
+        <Button
+            android:id="@+id/btnBuscar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+    </LinearLayout>
+</LinearLayout>
