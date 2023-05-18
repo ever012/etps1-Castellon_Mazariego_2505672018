@@ -10,46 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc5e5951-069a-42e9-b43d-ac5381b04de5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/java/sv/edu/utec/crudapp/Adaptadores/ProveedoresAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/java/sv/edu/utec/crudapp/ComentariosFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/java/sv/edu/utec/crudapp/CompartirFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/java/sv/edu/utec/crudapp/EntProveedores/EntProveedores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/java/sv/edu/utec/crudapp/EnviarFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/java/sv/edu/utec/crudapp/ExplorarFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/java/sv/edu/utec/crudapp/MensajesFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/java/sv/edu/utec/crudapp/datos/BaseHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/java/sv/edu/utec/crudapp/datos/Proveedores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/drawable/addcoment_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/drawable/brujula_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/drawable/mensajes_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/drawable/principal_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/drawable/save_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/drawable/send_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/drawable/share_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/drawable/trash_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/drawable/update_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/layout/fragment_comentarios.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/layout/fragment_compartir.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/layout/fragment_enviar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/layout/fragment_explorar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/layout/fragment_mensajes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/layout/header.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/layout/lista_proveedores.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDapp/app/src/main/res/menu/menu_bar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/etps1-Castellon_Mazariego_2505672018.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/corazon_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/star_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appSupermercadosPrecios/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/sv/edu/utec/menu/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/sv/edu/utec/menu/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appSupermercadosPrecios/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/appSupermercadosPrecios/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appSupermercadosPrecios/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/appSupermercadosPrecios/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,20 +47,28 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2PvvvxxCvK4WIMH6rxiGrj7jcOu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\computadora\Desktop\ETPS1-T_TECNICAS_DE_PRODUCCION_INDUSTRIAL_DE_SOFTWARE_I\etps1-Castellon_Mazariego_2505672018\app\src\main\res\drawable" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="menu.app.main" />
@@ -142,5 +139,16 @@
       <updated>1684350603767</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
